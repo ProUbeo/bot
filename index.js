@@ -106,14 +106,14 @@ if(message.content === "sig!help"){ //sig help
 
     message.channel.send({embed});
 }
-if(message.content === "magie!help"){ //magie
+if(message.content === "Magie!help"){ //magie
  
     const embed = new Discord.RichEmbed()
     .setTitle("commande magique")
     .setColor(0x0086AE)
     .setDescription("table des éléments de magie")
     .addField("magie utilisable",
-      "magie!feu\nmagie!ténèbre\nmagie!éclair\nmagie!glace\nmagie!vent\nagie!temps\nmagie!lumière")
+      "Magie!feu\nMagie!ténèbre\nMagie!éclair\nMagie!glace\nMagie!vent\nMagie!temps\nMagie!lumière")
 
 
     message.channel.send({embed});
@@ -153,31 +153,31 @@ if (message.content === "sigbot!gif"){
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
-if(message.content === "magie!éclair"){ //magie 
+if(message.content === "Magie!éclair"){ //magie 
     message.channel.send(`**${message.author.username}** lance une attaque magique élèctrique`,{
     file: "https://cdn.discordapp.com/attachments/434750011771977739/439130838559490052/02.gif"
 })}
-if(message.content === "magie!ténèbre"){ //magie 
+if(message.content === "Magie!ténèbre"){ //magie 
     message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
     file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
 });
 }
-if(message.content === "magie!glace"){ //magie 
+if(message.content === "Magie!glace"){ //magie 
     message.channel.send(`**${message.author.username}** lance une attaque magique de glace`,{
     file: "https://blog-imgs-18-origin.fc2.com/e/t/e/eternalhydrogen/skill_21111005_effect.gif"
 });
 }
-if(message.content === "magie!vent"){ //magie 
+if(message.content === "Magie!vent"){ //magie 
     message.channel.send(`**${message.author.username}** lance une attaque magique de vent`,{
     file: "https://i.pinimg.com/originals/98/51/59/985159cc49c09556b29c2264208028ca.gif"
 });
 }
-if(message.content === "magie!temps"){ //magie 
+if(message.content === "Magie!temps"){ //magie 
     message.channel.send(`**${message.author.username}** lance une attaque magique temporelle`,{
     file: "https://cdn.discordapp.com/attachments/440164860702228480/440973908792049674/image.gif"
 });
 }
-if(message.content === "magie!lumière"){ //magie 
+if(message.content === "Magie!lumière"){ //magie 
     message.channel.send(`**${message.author.username}** lance une attaque magique de lumière`,{
     file: "https://img1.picmix.com/output/stamp/normal/8/7/8/3/93878_dcd8b.gif"
 });
@@ -196,7 +196,7 @@ if (message.content === "merci <@437179201284603904>"){
     if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
         message.reply("ERR : TOO MANY LEVEL'S");
         }
- if(message.content === "magie!feu"){ //magie
+ if(message.content === "Magie!feu"){ //magie
     message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
 })
