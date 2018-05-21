@@ -6,8 +6,7 @@ var prefix = ("sigbot!")
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
     bot.user.setPresence({ game: { name: 'mentionner moi pour que je vous aide :3'}, status: 'online'}) //en ligne;
-    console.log("Connected")
-});
+    console.log("Connected")});
 
 bot.login(process.env.TOKEN);
 
@@ -253,6 +252,19 @@ if(message.content === "sakamoto!help"){ //sakamoto help
       "aucun")
 
     message.channel.send({embed});
+}
+if(message.content === "the test"){
+
+    let sicon = message.guild.displayAvatarURL;
+    let serverembed = new Discord.RichEmbed()
+    setDescription("information du serveur")
+    .setColor(0x0086AE)
+    .setThumbnail(sicon)
+    .addField("noom du serveur", message.guild.name)
+    .addField("crée le", message.guild.createdAt)
+    .addField("vous avez rejoin", message.member.joinedAt)
+    .addField("nombre de membre", message.guild.memberCount);
+    return message.channel.send(serverembed);
 }
 }
 ) 
