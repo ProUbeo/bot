@@ -20,8 +20,31 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
+bot.on("guildMemberAdd", member => {//sail of jsp
+    
+    member.guild.channels.find("name", "bienvenue-au-revoir").send(`${member} vien de POP de nul pars '^'`)
+        })
+        bot.on("guildMemberRemove", member => {
+        member.guild.channels.find("name", "bienvenue-au-revoir").send(`${member} a DEPOP :O`)
+        })//sail of jsp
 
-bot.on("guildMemberAdd", member => {
+bot.on("guildMemberAdd", member => {//assasin
+    
+    member.guild.channels.find("name", "🕹cours-de-discord🕹").send(`${member} vien de POP de nul pars '^'`)
+        })
+        bot.on("guildMemberRemove", member => {
+        member.guild.channels.find("name", "🕹cours-de-discord🕹").send(`${member} a DEPOP :O`)
+        })//assasin
+
+bot.on("guildMemberAdd", member => {//eryh 
+    
+    member.guild.channels.find("name", "général").send(`${member} vien de POP de nul pars '^'`)
+        })
+        bot.on("guildMemberRemove", member => {
+        member.guild.channels.find("name", "général").send(`${member} a DEPOP :O`)
+        })//eryh 
+
+bot.on("guildMemberAdd", member => {//BH
     
 member.guild.channels.find("name", "👑portail").send(`${member} vien de POP de nul pars '^'`)
     })
@@ -31,7 +54,7 @@ member.guild.channels.find("name", "👑portail").send(`${member} vien de POP de
     bot.on("guildMemberAdd", member => {
         var role = member.guild.roles.find('name', 'new');
     member.addRole(role)
-    })
+    })//BH
 bot.on('message', message => {
     var msgauthor = message.author.id;
 
